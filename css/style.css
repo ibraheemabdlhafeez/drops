@@ -12,6 +12,7 @@ body {
     justify-content: center;
     align-items: center;
 }
+@media (max-width: 767px) {
 .drops {
     position: relative;
     display: flex;
@@ -20,7 +21,7 @@ body {
 }
 .drop {
     position: absolute;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
     width: 150px;
     height: 150px;
     background-color: transparent;
@@ -51,10 +52,11 @@ body {
     border-radius: 47% 53% 72% 28% / 49% 22% 78% 51% ;
 }
 .drop:nth-child(2) {
-    transform: scale(0.5) translate(-350px, 180px);
+    transform: scale(0.5) translate(-250px, 180px);
     border-radius: 45% 55% 28% 72% / 34% 43% 57% 66% ;
 }
 .drop:nth-child(3) {
     transform: scale(.3) translate(300px, 80px);
     border-radius: 55% 45% 51% 49% / 19% 43% 57% 81%  ;
+}
 }
